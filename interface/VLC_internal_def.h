@@ -56,8 +56,21 @@ struct VLCInput
     float EPSStrAng;
     float SpdRank;
 };
-    
-    
+struct VLCOutput
+{
+    u_int8_t EPBReq;
+    u_int8_t GearReq;
+    float BrtTqReq;
+    float VcuTqReql;
+};
+
+enum VLCStage{
+        VLC_Stage_None = 0,   //退出
+        VLC_Stage_Drvoff,     //起步
+        VLC_Stage_Closeloop,  //巡航
+        VLC_Stage_Hold,       //驻车
+};
+
 }
 }
 }
