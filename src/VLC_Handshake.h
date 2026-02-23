@@ -1,5 +1,5 @@
-#ifndef VLC_STAGE_H
-#define VLC_STAGE_H
+#ifndef VLC_HANDSHAKE_H
+#define VLC_HANDSHAKE_H
 
 #include "VLC_internal_def.h"
 #include "VLC_context.h"
@@ -8,12 +8,10 @@ namespace byd{
 namespace adas{
 namespace VLC{
 
-
-
-class VLCStageMachine{
+class VLCHandShake{
     public:
-    VLCStageMachine(void);
-    VLCStage UpdateVLCStage();
+    VLCHandShake(void);
+    VLCHSOutput UpdateVLCHandShake();
 
 };
 

@@ -4,6 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/interface",
                 "/usr/include/c++/13",
                 "/usr/include/x86_64-linux-gnu/c++/13",
                 "/usr/include/c++/13/backward",

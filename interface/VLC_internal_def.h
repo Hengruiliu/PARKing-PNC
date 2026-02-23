@@ -61,14 +61,24 @@ struct VLCOutput
     u_int8_t EPBReq;
     u_int8_t GearReq;
     float BrtTqReq;
-    float VcuTqReql;
+    float VcuTqReq;
 };
 
 enum VLCStage{
-        VLC_Stage_None = 0,   //退出
-        VLC_Stage_Drvoff,     //起步
-        VLC_Stage_Closeloop,  //巡航
-        VLC_Stage_Hold,       //驻车
+    VLC_Stage_None = 0,   //退出
+    VLC_Stage_Drvoff,     //起步
+    VLC_Stage_Closeloop,  //巡航
+    VLC_Stage_Hold,       //驻车
+};
+enum VLCHSState{
+    VLC_Error = 0,
+    VLC_Standby,
+    VLC_Active,
+};
+struct VLCHSOutput
+{
+    VLCHSState hs_state;           
+    u_int16_t VLC_error_code;          
 };
 
 }
